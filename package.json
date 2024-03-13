@@ -1,0 +1,79 @@
+{
+  "name": "@kozmoai/nebula-design",
+  "workspaces": [
+    "./demo"
+  ],
+  "version": "2.3.6",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozmoai/nebula-design.git"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "nebula"
+  ],
+  "scripts": {
+    "serve": "vite --host --mode=demo",
+    "dev": "vite build -w & vue-tsc -w & tsc-alias -w",
+    "build": "vite build && vue-tsc && tsc-alias",
+    "build:demo": "vite build --mode=demo",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "changelog": "auto-changelog --package --commit-limit 0",
+    "version": "npm run changelog && git add CHANGELOG.md"
+  },
+  "main": "./dist/nebula-design.umd.js",
+  "module": "./dist/nebula-design.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/nebula-design.mjs",
+      "require": "./dist/nebula-design.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css",
+    "./dist/tailwindPlugin.js": "./dist/tailwindPlugin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/types/src/index.d.ts",
+  "devDependencies": {
+    "@fontsource/inconsolata": "^4.5.7",
+    "@fontsource/inter": "^4.5.12",
+    "@prefecthq/eslint-config": "1.0.31",
+    "@types/dompurify": "^3.0.1",
+    "@types/marked": "^4.0.8",
+    "@types/node": "^20.1.6",
+    "@vitejs/plugin-vue": "5.0.4",
+    "auto-changelog": "^2.4.0",
+    "autoprefixer": "^10.4.6",
+    "eslint": "^8.6.0",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "ts-node": "^10.7.0",
+    "tsc-alias": "1.8.8",
+    "typescript": "5.3.3",
+    "vite": "5.1.4",
+    "vite-svg-loader": "5.1.0",
+    "vue-tsc": "1.8.27"
+  },
+  "peerDependencies": {
+    "@prefecthq/vue-compositions": "^1.6.7",
+    "vue": "^3.3.4",
+    "vue-router": "^4.1.6"
+  },
+  "dependencies": {
+    "@heroicons/vue": "2.0.17",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/lodash.debounce": "4.0.9",
+    "date-fns": "2.30.0",
+    "dompurify": "3.0.8",
+    "highlight.js": "11.9.0",
+    "lodash.debounce": "4.0.8",
+    "marked": "4.3.0"
+  }
+}
