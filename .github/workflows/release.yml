@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 'prod'
 
-    steps:
+#    steps:
 #      - uses: actions/checkout@v4
 #      - uses: kozmoai/actions-release-ui-components@main
 #        with:
@@ -28,20 +28,22 @@ jobs:
 #        with:
 #          node-version-file: ".nvmrc"
 
-      - uses: actions/checkout@v4
 
-#      - name: Install Dependencies
-#        run: npm i
-#        shell: bash
-
-      - name: Build Package
-        run: npm i && npm run build
-        shell: bash
-
-      - name: Publish Package to NPMs
-        id: publish
-        uses: JS-DevTools/npm-publish@v2
+  deploy-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          token: ${{ secrets.NPM_ACCESS_TOKEN }}
-          strategy: upgrade
-          access: public
+          node-version: "18.x"
+          registry-url: "https://registry.npmjs.org"
+      - name: Set version in npm package
+        run: |
+          VERSION=2.3.6
+        shell: bash
+      - run: |
+          npm install
+      - run: |
+          npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
