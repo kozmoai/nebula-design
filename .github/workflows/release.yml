@@ -25,10 +25,23 @@ jobs:
         shell: bash
       - run: |
           npm install
-      - run: |
-          npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+
+#      - run: |
+#          npm publish --access=public
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+
+      - name: Build Package
+        run: npm run build
+        shell: bash
+
+      - name: Publish Package to NPM
+        id: publish
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ inputs.NPM_TOKEN }}
+          strategy: upgrade
+          access: public
 
     #    steps:
     #      - uses: actions/checkout@v4
