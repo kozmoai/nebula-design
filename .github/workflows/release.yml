@@ -39,7 +39,7 @@ jobs:
         id: publish
         uses: JS-DevTools/npm-publish@v2
         with:
-          token: ${{ inputs.NPM_ACCESS_TOKEN }}
+          token: ${{ secrets.NPM_ACCESS_TOKEN }}
           strategy: upgrade
           access: public
 
