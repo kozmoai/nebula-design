@@ -13,24 +13,6 @@ jobs:
     name: Build & Publish Release
     runs-on: ubuntu-latest
     environment: 'prod'
-
-#    steps:
-#      - uses: actions/checkout@v4
-#      - uses: kozmoai/actions-release-ui-components@main
-#        with:
-#          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-#          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-#          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-#          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-
-#      - name: Setup Node
-#        uses: actions/setup-node@v3
-#        with:
-#          node-version-file: ".nvmrc"
-
-
-  deploy-to-npm:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -46,4 +28,19 @@ jobs:
       - run: |
           npm publish --access=public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+
+    #    steps:
+    #      - uses: actions/checkout@v4
+    #      - uses: kozmoai/actions-release-ui-components@main
+    #        with:
+    #          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+    #          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+    #          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+    #          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+
+    #      - name: Setup Node
+    #        uses: actions/setup-node@v3
+    #        with:
+    #          node-version-file: ".nvmrc"
+
