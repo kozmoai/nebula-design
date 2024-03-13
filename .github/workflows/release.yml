@@ -31,9 +31,9 @@ jobs:
 #        env:
 #          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
 
-      - name: Build Package
-        run: npm run build
-        shell: bash
+#      - name: Build Package
+#        run: npm run build
+#        shell: bash
 
       - name: Publish Package to NPM
         id: publish
