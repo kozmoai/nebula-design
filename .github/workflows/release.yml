@@ -15,11 +15,31 @@ jobs:
     environment: 'prod'
 
     steps:
-      - uses: actions/checkout@v4
+#      - uses: actions/checkout@v4
+#      - uses: kozmoai/actions-release-ui-components@main
+#        with:
+#          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+#          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+#          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+#          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 
-      - uses: kozmoai/actions-release-ui-components@main
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+          node-version-file: ".nvmrc"
+
+      - name: Install Dependencies
+        run: npm ci
+        shell: bash
+
+      - name: Build Package
+        run: npm run build
+        shell: bash
+
+      - name: Publish Package to NPMs
+        id: publish
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_ACCESS_TOKEN }}
+          strategy: upgrade
+          access: public
