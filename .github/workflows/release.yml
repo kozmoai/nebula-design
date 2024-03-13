@@ -23,10 +23,12 @@ jobs:
 #          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 #          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: ".nvmrc"
+#      - name: Setup Node
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version-file: ".nvmrc"
+
+      - uses: actions/checkout@v4
 
       - name: Install Dependencies
         run: npm ci
