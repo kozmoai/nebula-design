@@ -13,47 +13,43 @@ jobs:
     name: Build & Publish Release
     runs-on: ubuntu-latest
     environment: 'prod'
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: kozmoai/actions-release-ui-components@main
         with:
-          node-version: "18.x"
-          registry-url: "https://registry.npmjs.org"
-      - name: Set version in npm package
-        run: |
-          VERSION=2.3.6
-        shell: bash
-      - run: |
-          npm install
+          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 
-#      - run: |
-#          npm publish --access=public
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-
-#      - name: Build Package
-#        run: npm run build
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: "18.x"
+#          registry-url: "https://registry.npmjs.org"
+#      - name: Set version in npm package
+#        run: |
+#          VERSION=2.3.6
 #        shell: bash
-
-      - name: Publish Package to NPM
-        id: publish
-        uses: JS-DevTools/npm-publish@v2
-        with:
-          token: ${{ secrets.NPM_ACCESS_TOKEN }}
-#          strategy: upgrade
-          access: public
-
-    #    steps:
-    #      - uses: actions/checkout@v4
-    #      - uses: kozmoai/actions-release-ui-components@main
-    #        with:
-    #          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-    #          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-    #          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-    #          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-
-    #      - name: Setup Node
-    #        uses: actions/setup-node@v3
-    #        with:
-    #          node-version-file: ".nvmrc"
+#      - run: |
+#          npm install
+#
+##      - run: |
+##          npm publish --access=public
+##        env:
+##          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+#
+##      - name: Build Package
+##        run: npm run build
+##        shell: bash
+#
+#      - name: Publish Package to NPM
+#        id: publish
+#        uses: JS-DevTools/npm-publish@v2
+#        with:
+#          token: ${{ secrets.NPM_ACCESS_TOKEN }}
+##          strategy: upgrade
+#          access: public
 
