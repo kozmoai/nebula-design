@@ -37,7 +37,7 @@ export default defineConfig(({ mode }) => {
       copyPublicDir: true,
       lib: {
         entry: resolve(__dirname, 'src/index.ts'),
-        name: 'PrefectDesign',
+        name: 'NebulaDesign',
       },
       rollupOptions: {
       // ensures vue isn't added to the bundle

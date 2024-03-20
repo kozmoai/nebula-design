@@ -1,11 +1,37 @@
-<svg viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd"
-    d="M15.8894 15.0703L37.9998 26.5427L38.0002 26.5425V49.4777L60.1037 38.0089L60.1106 38.0124V38.0053L60.1107 38.0053L60.1106 38.0052V15.0677L60.1079 15.0691L37.9998 3.5979L15.8894 15.0703Z"
-    fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd"
-    d="M15.8894 15.0703L37.9998 26.5427L38.0002 26.5425V49.4777L60.1037 38.0089L60.1106 38.0124V38.0053L60.1107 38.0053L60.1106 38.0052V15.0677L60.1079 15.0691L37.9998 3.5979L15.8894 15.0703Z"
-    fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd"
-    d="M37.9871 49.4642L15.8898 37.9987V60.9298L15.8898 60.9298L15.8898 60.9299V60.9434L15.9029 60.9367L38.0002 72.4022V49.4711L38.0003 49.4711L38.0002 49.471V49.4574L37.9871 49.4642Z"
-    fill="currentColor" />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="76" height="76" viewBox="0 0 76 76" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+	<defs>
+</defs>
+	<rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
+	<g transform="matrix(0.2066 0 0 0.2066 38.0024 38.0275)" id="97957">
+<g style="">
+		<g transform="matrix(12.6 0 0 12.6 -85.9509 -103.131)" id="927755">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="4.8695,-0.126 0.2265,-2.488 -4.8695,0.075 -0.1005,2.488 4.8695,-0.126 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 1.6569 -59.3838)" id="128924">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="0.0455,-2.516 4.9135,-0.04 -0.1375,2.516 -4.9135,0.099 0.0455,-2.516 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 88.2441 -103.8492)" id="759965">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-0.3255,-2.395 4.6755,0.132 0.2035,2.395 -4.6755,-0.084 -0.3255,-2.395 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 0.6048 -147.4389)" id="108444">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="4.478,-0.0245 -0.025,-2.2985 -4.478,-0.0595 0.161,2.2985 4.478,-0.0245 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 47.0358 120.1032)" id="631931">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-2.727,-1.723 -2.727,4.468 2.727,1.726 2.721,-4.468 -2.727,-1.723 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 46.9854 15.1452)" id="663231">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="2.723,1.701 2.717,-4.428 -2.723,-1.703 -2.723,4.428 2.723,1.701 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 134.4735 75.9906)" id="921532">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="2.3275,-4.277 2.3275,1.938 -2.3245,4.277 -2.3275,-1.909 2.3275,-4.277 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 134.4357 -28.6146)" id="835629">
+<polygon style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="2.3305,1.852 2.3305,-4.238 -2.3305,-1.903 -2.3265,4.238 2.3305,1.852 "/>
+</g>
+	<g transform="matrix(12.6 0 0 12.6 -87.6897 45.4545)" id="436177">
+<path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-9.0405, -19.6075)" d="M 15.08 15.5 l -3.674 -1.861 v 8.045 S 6.913 12.05 6.5 11.185 a 0.9 0.9 0 0 0 -0.331 -0.264 C 5.361 10.5 3 9.29 3 9.29 V 23.5 L 6.266 25.26 V 17.832 s 4.445 8.607 4.49 8.7 a 4.026 4.026 0 0 0 0.968 1.32 c 0.635 0.423 3.357 2.073 3.357 2.073 Z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
 </svg>

@@ -76,7 +76,6 @@
       return
     }
 
-    // We can't use the useElementRect composition here because it doesn't update the rect see https://github.com/PrefectHQ/vue-compositions/issues/250
     const containerRect = container.value.getBoundingClientRect()
 
     const collapsePoint = props.collapsePoint ?? 0
